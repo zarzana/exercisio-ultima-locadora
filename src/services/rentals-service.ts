@@ -83,5 +83,7 @@ export default {
   getRentals,
   getRentalById,
   createRental,
-  finishRental
+  finishRental,
+  checkMoviesValidForRental,
+  checkUserAbleToRental
 };
