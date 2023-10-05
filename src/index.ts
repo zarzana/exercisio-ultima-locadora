@@ -1,4 +1,7 @@
-import { PrismaClient } from '@prisma/client'
-const prisma = new PrismaClient();
+import app from "./app";
+import dotenv from "dotenv";
 
-export default prisma;
+dotenv.config();
+
+const port = process.env.PORT || 5000;
+app.listen(port, () => { console.log(`Server running on port ${port}`) });
